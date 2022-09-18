@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: adding-notebooks
+- file: annotations
+- file: scroll-syncing
+- file: adding-exotic
+- file: limitations
+- file: support
+# - file: faqs
