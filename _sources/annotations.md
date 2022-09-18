@@ -1,6 +1,6 @@
 # Whiteboarding with your notebook
 
-Talking about Jupyter data visualizations over Zoom can be difficult when you have no way of pointing directly to something on the screen. It's often hard to verbally describe where on the plot an outlier is.
+Talking about Jupyter data visualizations over Zoom can be difficult when you have no way of pointing directly to something on the screen. For example, it's often hard to verbally describe where on the plot an outlier is or where the seasonality is breaking down for a time-series.
 ## Tools
 
 JupyterSpot gives you several tools for annotating your notebook that can help with this. All objects created by these tools sync in real-time so that you and your colleagues always see the same thing.

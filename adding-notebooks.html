@@ -388,10 +388,10 @@ title="Print to PDF"
 <h1>Adding your first notebook<a class="headerlink" href="#adding-your-first-notebook" title="Permalink to this headline">#</a></h1>
 <section id="adding-a-notebook-via-url">
 <h2>Adding a notebook via URL<a class="headerlink" href="#adding-a-notebook-via-url" title="Permalink to this headline">#</a></h2>
-<p>There are several ways to to add your notebook to JupyterSpot. If your notebook is available from a publicly visible URL (<code class="docutils literal notranslate"><span class="pre">YOUR_NB_URL</span></code>), then there are two options:</p>
+<p>There are several ways to to add your notebook to JupyterSpot. If the notebook is available from a publicly visible URL, then there are two options:</p>
 <ol class="simple">
-<li><p>Add that URL to the form at <a class="reference external" href="https://jupyterspot.com/notebooks">https://jupyterspot.com/notebooks</a></p></li>
-<li><p>Visit <code class="docutils literal notranslate"><span class="pre">https://jupyterspot.com/notebook?url=YOUR_NB_URL</span></code> to have the notebook added automatically.</p></li>
+<li><p>Put that URL into the form at <a class="reference external" href="https://jupyterspot.com/notebooks">https://jupyterspot.com/notebooks</a></p></li>
+<li><p>Visit <code class="docutils literal notranslate"><span class="pre">https://jupyterspot.com/notebook?url=YOUR_NB_URL</span></code>, where <code class="docutils literal notranslate"><span class="pre">YOUR_NB_URL</span></code> is the notebook’s URL.</p></li>
 </ol>
 <p>For option (1), first click the plus icon on the top left of the page:</p>
 <p><img alt="" src="_images/add-notebook.png" /></p>
@@ -400,9 +400,16 @@ title="Print to PDF"
 <p>Enter the URL of your notebook into the form’s box, then you’ll be taken to a whiteboard.</p>
 <section id="url-considerations">
 <h3>URL considerations<a class="headerlink" href="#url-considerations" title="Permalink to this headline">#</a></h3>
-<p>Note that URLs <strong>must</strong> point to a raw <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file. For GitHub URLs, we automatically substitute <code class="docutils literal notranslate"><span class="pre">github.com</span></code> with <code class="docutils literal notranslate"><span class="pre">raw.githubusercontent.com</span></code> so that <a class="reference external" href="https://github.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb">https://github.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb</a> points to <a class="reference external" href="https://raw.githubusercontent.com.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb">https://raw.githubusercontent.com.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb</a>.</p>
+<p>Note that URLs <strong>must</strong> point to a raw <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file. For GitHub URLs, we automatically substitute <code class="docutils literal notranslate"><span class="pre">github.com</span></code> with <code class="docutils literal notranslate"><span class="pre">raw.githubusercontent.com</span></code> so that</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jupyterspot</span><span class="o">/</span><span class="n">notebooks</span><span class="o">/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">stable</span><span class="o">-</span><span class="n">diffusion</span><span class="o">.</span><span class="n">ipynb</span> 
+</pre></div>
+</div>
+<p>points to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jupyterspot</span><span class="o">/</span><span class="n">notebooks</span><span class="o">/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">stable</span><span class="o">-</span><span class="n">diffusion</span><span class="o">.</span><span class="n">ipynb</span><span class="o">.</span>
+</pre></div>
+</div>
 <p>If you’re using an URL from BitBucket for example, make sure it points to the raw notebook JSON content and not a page showing a notebook viewer embedded in it.</p>
-<p>All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. Do not put any personal or proprietary information into the notebooks! If you need privacy, you should use a private notebook via one of our <a class="reference external" href="https://jupyterspot.com/pricing">paid plans</a>.</p>
+<p>All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. <strong>Do not put any personal or proprietary information into these public notebooks!</strong> If you need privacy, you should use a private notebook via one of our <a class="reference external" href="https://jupyterspot.com/pricing">paid plans</a>.</p>
 </section>
 </section>
 <section id="adding-a-notebook-via-upload">

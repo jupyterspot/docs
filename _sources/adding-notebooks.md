@@ -2,10 +2,10 @@
 
 ## Adding a notebook via URL
 
-There are several ways to to add your notebook to JupyterSpot. If your notebook is available from a publicly visible URL (`YOUR_NB_URL`), then there are two options:
+There are several ways to to add your notebook to JupyterSpot. If the notebook is available from a publicly visible URL, then there are two options:
 
-1. Add that URL to the form at [https://jupyterspot.com/notebooks](https://jupyterspot.com/notebooks)
-2. Visit `https://jupyterspot.com/notebook?url=YOUR_NB_URL` to have the notebook added automatically.
+1. Put that URL into the form at [https://jupyterspot.com/notebooks](https://jupyterspot.com/notebooks)
+2. Visit `https://jupyterspot.com/notebook?url=YOUR_NB_URL`, where `YOUR_NB_URL` is the notebook's URL.
 
 For option (1), first click the plus icon on the top left of the page:
 
@@ -19,11 +19,21 @@ Enter the URL of your notebook into the form's box, then you'll be taken to a wh
 
 ### URL considerations
 
-Note that URLs **must** point to a raw `.ipynb` file. For GitHub URLs, we automatically substitute `github.com` with `raw.githubusercontent.com` so that https://github.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb points to https://raw.githubusercontent.com.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb.
+Note that URLs **must** point to a raw `.ipynb` file. For GitHub URLs, we automatically substitute `github.com` with `raw.githubusercontent.com` so that
+
+```
+https://github.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb 
+```
+
+points to:
+
+```
+https://raw.githubusercontent.com.com/jupyterspot/notebooks/blob/main/stable-diffusion.ipynb.
+```
 
 If you're using an URL from BitBucket for example, make sure it points to the raw notebook JSON content and not a page showing a notebook viewer embedded in it.
 
-All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. Do not put any personal or proprietary information into the notebooks! If you need privacy, you should use a private notebook via one of our [paid plans](https://jupyterspot.com/pricing).
+All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. **Do not put any personal or proprietary information into these public notebooks!** If you need privacy, you should use a private notebook via one of our [paid plans](https://jupyterspot.com/pricing).
 
 ## Adding a notebook via upload
 

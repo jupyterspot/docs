@@ -2,7 +2,7 @@
 
 ## Browsers
 
-We currently recommend the Chrome browser for the best experience. Users of Safari will notice that the positions of drawings, shapes, arrows, text, and sticky notes differ slightly from those of their colleagues. This is due to browser implementation differences which are in the process of addressing. If you wish to use Safari, we recommend that your colleagues also use Safari so that the positions match up for everyone. Note that the styles palette on Safari is not visible but can still be clicked in the upper right corner of the screen.
+We currently recommend the Chrome browser for the best experience. Users of Safari will notice that the positions of drawings, shapes, arrows, text, and sticky notes differ slightly from those of their colleagues. This is due to browser implementation differences that we're in the process of accommodating for. If you wish to use Safari, we recommend that your colleagues also use Safari so that the positions match up for everyone. Note that the styles palette on Safari is not visible but can still be clicked in the upper right corner of the screen.
 
 If you notice issues on browsers other than Safari, [please let us know on GitHub](https://github.com/jupyterspot/support).
 
