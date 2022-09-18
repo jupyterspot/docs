@@ -24,4 +24,6 @@ If you wish to break away and scroll on your own, simply click the closed lock t
 
 ![](img/ss-unfollow.png)
 
-When you're ready to join back to the leader, you can click it again to start syncing your scroll position again. This feature is handy if you want to look back over the notebook while the presenter keeps going. If you find that your trying to scroll and can't, it's probably because you're following the leader. Trying unlocking so that you can scroll independently.
+When you're ready to join back to the leader, you can click it again to start syncing your scroll position again. This feature is handy if you want to look back over the notebook while the presenter keeps going. 
+
+If you find that your trying to scroll and can't, it's probably because you're following the leader. Trying unlocking so that you can scroll independently.
