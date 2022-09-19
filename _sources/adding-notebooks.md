@@ -39,4 +39,18 @@ All notebooks added via URL are considered public, so any drawings, shapes, arro
 
 Paid plans can add private notebooks via uploading through the form shown above. You can either drag and drop a notebook from Finder or Explorer into the outlined area, or click the outlined area and browse to the location of the notebook on your filesystem. Only `.ipynb` files are accepted.
 
-All notebooks added via upload are private, meaning that only other members of your organization can view the notebook and draw on its whiteboard.
+## Sharing your notebook
+
+Once you've added a notebook, you can share the link to it with your colleagues so that they can join your whiteboarding session. For public notebooks created with URLs, this link will look something like
+
+```
+https://jupyterspot.com/notebook?url=https://raw.githubusercontent.com/jupyterspot/notebooks/main/stable-diffusion.ipynb
+```
+
+For private notebooks, the link will look something like
+
+```
+https://jupyterspot.com/notebook?id=dd7f66fe-7012-442f-a51d-418260cc714c
+```
+
+All notebooks added via upload are private, meaning that only those who have the link are able to view the notebook.
