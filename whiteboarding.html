@@ -144,6 +144,11 @@ const thebe_selector_output = ".output, .cell_output"
    Support
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="credits.html">
+   Credits
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -234,7 +239,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/jupyterspot/docs/issues/new?title=Issue%20on%20page%20%2Fannotations.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/jupyterspot/docs/issues/new?title=Issue%20on%20page%20%2Fwhiteboarding.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -262,7 +267,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/annotations.md"
+        <a href="_sources/whiteboarding.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -363,6 +368,11 @@ title="Print to PDF"
    Styles
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preferences">
+   Preferences
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -424,6 +434,11 @@ title="Print to PDF"
    Styles
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preferences">
+   Preferences
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -436,7 +451,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="whiteboarding-with-your-notebook">
 <h1>Whiteboarding with your notebook<a class="headerlink" href="#whiteboarding-with-your-notebook" title="Permalink to this headline">#</a></h1>
-<p>Talking about Jupyter data visualizations over Zoom can be difficult when you have no way of pointing directly to something on the screen. For example, it’s often hard to verbally describe where on the plot an outlier is or where the seasonality is breaking down for a time-series.</p>
+<p>Talking about Jupyter data visualizations over Zoom can be difficult when you have no way of pointing directly to something on the screen. For example, it’s often hard to verbally describe where on the plot an outlier is or where the seasonality is breaking down in a time-series.</p>
 <section id="tools">
 <h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
 <p>JupyterSpot gives you several tools for annotating your notebook that can help with this. All objects created by these tools sync in real-time so that you and your colleagues always see the same thing.</p>
@@ -475,6 +490,18 @@ title="Print to PDF"
 <h2>Styles<a class="headerlink" href="#styles" title="Permalink to this headline">#</a></h2>
 <p>The styles palette can be used to select options that apply to other tools, such as color, fill, texture, and size. It’s accessible from the top right of your screen next to the undo and redo buttons and can be kept open by clicking “Keep Open”.</p>
 <p><img alt="" src="_images/tool-colors.png" /></p>
+</section>
+<section id="preferences">
+<h2>Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">#</a></h2>
+<p>The preferences menu is accessible from the upper left of the whiteboarding UI:</p>
+<p><img alt="" src="_images/preferences.png" /></p>
+<p>It allows you to make the following customizations:</p>
+<ol class="simple">
+<li><p>Notebook in foreground (default <code class="docutils literal notranslate"><span class="pre">false</span></code>): setting this to <code class="docutils literal notranslate"><span class="pre">true</span></code> brings the notebook content to the foreground and pushes all drawings, shapes, text, and sticky notes to the background. This allows you to interact with any notebook content such as JavaScript plots, iFrames, video players, etc. <strong>With this set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, you won’t be able to add any annotations since the canvas is positioned behind the notebook.</strong></p></li>
+<li><p>Show Grid (default <code class="docutils literal notranslate"><span class="pre">false</span></code>): setting this to <code class="docutils literal notranslate"><span class="pre">true</span></code> displays a grid background on the canvas.</p></li>
+<li><p>Dock Position (default: <code class="docutils literal notranslate"><span class="pre">bottom</span></code>): this lets you position the dock to either to top, bottom, left, or right.</p></li>
+<li><p>Export Background (default: <code class="docutils literal notranslate"><span class="pre">transparent</span></code>) the background color to use when exporting drawings.</p></li>
+</ol>
 </section>
 </section>
 
