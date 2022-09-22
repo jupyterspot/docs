@@ -1,15 +1,9 @@
 # Credits
 
-JupyterSpot is made possible by an incredible set of open source projects, including but not limited to the following.
+JupyterSpot is built with an incredible set of open source projects including:
 
-## [Jupyter](https://jupyter.org)
+[![](img/open-source/nbviewer.png)](https://github.com/jupyter/nbviewer)
 
-![](img/open-source/jupyter.png)
+[![](img/open-source/tldraw.png)](https://github.com/tldraw/tldraw)
 
-## [tldraw](https://github.com/tldraw/tldraw)
-
-![](img/open-source/tldraw.png)
-
-## [Yjs](https://github.com/yjs/yjs)
-
-![](img/open-source/yjs.png)
+[![](img/open-source/yjs.png)](https://github.com/yjs/yjs)
