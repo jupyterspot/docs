@@ -1,4 +1,4 @@
-# Scroll syncing
+# Using scroll syncing
 
 When someone presents a long Jupyter notebooks of their latest results remotely over Zoom, it becomes hard to ask a question about a specific figure without a lot of verbal interaction about where to scroll to. It's also impossible to go back and review something important in the initial notebook cells that the presenter has already scrolled past. JupyterSpot introduces the concept of a scroll leader and gives you the option to sync your scroll position with theirs.
 

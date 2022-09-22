@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Whiteboarding with your notebook" href="annotations.html" />
+    <link rel="next" title="Whiteboarding with your notebook" href="whiteboarding.html" />
     <link rel="prev" title="Welcome to JupyterSpot’s docs" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -120,18 +120,28 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="annotations.html">
+  <a class="reference internal" href="whiteboarding.html">
    Whiteboarding with your notebook
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="scroll-syncing.html">
-   Scroll syncing
+   Using scroll syncing
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="adding-exotic.html">
    Adding notebooks from Colab, SageMaker, etc
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sending-invites.html">
+   Inviting others (free accounts)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="adding-users.html">
+   Adding users (paid accounts)
   </a>
  </li>
  <li class="toctree-l1">
@@ -142,6 +152,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="support.html">
    Support
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="credits.html">
+   Credits
   </a>
  </li>
 </ul>
@@ -338,6 +353,11 @@ title="Print to PDF"
    Adding a notebook via upload
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-collaborating">
+   Start collaborating
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -372,6 +392,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#adding-a-notebook-via-upload">
    Adding a notebook via upload
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-collaborating">
+   Start collaborating
   </a>
  </li>
 </ul>
@@ -415,7 +440,21 @@ title="Print to PDF"
 <section id="adding-a-notebook-via-upload">
 <h2>Adding a notebook via upload<a class="headerlink" href="#adding-a-notebook-via-upload" title="Permalink to this headline">#</a></h2>
 <p>Paid plans can add private notebooks via uploading through the form shown above. You can either drag and drop a notebook from Finder or Explorer into the outlined area, or click the outlined area and browse to the location of the notebook on your filesystem. Only <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files are accepted.</p>
-<p>All notebooks added via upload are private, meaning that only other members of your organization can view the notebook and draw on its whiteboard.</p>
+</section>
+<section id="start-collaborating">
+<h2>Start collaborating<a class="headerlink" href="#start-collaborating" title="Permalink to this headline">#</a></h2>
+<p>Once you’ve added a notebook via one of the methods discussed, you can then share its JupyterSpot link with your colleagues so that they can join your whiteboarding session. To copy the shareable link, click the “Copy Invite Link” in the upper left of the screen where the number of online users is shown:</p>
+<p><img alt="" src="_images/menu-share-link.png" /></p>
+<p>As colleagues join, you’ll see their names where it says “individual user” in the screenshot above, and the count of online users will increase.</p>
+<p>For public notebooks created with URLs, the sharable links have the format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://jupyterspot.com/notebook?url=https://raw.githubusercontent.com/jupyterspot/notebooks/main/stable-diffusion.ipynb
+</pre></div>
+</div>
+<p>For private notebooks, the format is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://jupyterspot.com/notebook?id=dd7f66fe-7012-442f-a51d-418260cc714c
+</pre></div>
+</div>
+<p>All notebooks added via upload are private, meaning that <strong>only those who have the link are able to view the notebook</strong>. Think of your notebook as a Google Doc with access set to “Anyone with the link has access.”</p>
 </section>
 </section>
 
@@ -453,7 +492,7 @@ title="Print to PDF"
             <p class="prev-next-title">Welcome to JupyterSpot’s docs</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="annotations.html" title="next page">
+    <a class='right-next' id="next-link" href="whiteboarding.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Whiteboarding with your notebook</p>

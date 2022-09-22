@@ -5,9 +5,12 @@ format: jb-book
 root: intro
 chapters:
 - file: adding-notebooks
-- file: annotations
+- file: whiteboarding
 - file: scroll-syncing
 - file: adding-exotic
+- file: sending-invites
+- file: adding-users
 - file: limitations
 - file: support
+- file: credits
 # - file: faqs
