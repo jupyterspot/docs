@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Using scroll syncing &#8212; Docs</title>
+    <title>Privacy &#8212; Docs</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Adding notebooks from Colab, SageMaker, etc" href="adding-exotic.html" />
-    <link rel="prev" title="Whiteboarding with your notebook" href="whiteboarding.html" />
+    <link rel="next" title="Limitations" href="limitations.html" />
+    <link rel="prev" title="Adding users (paid accounts)" href="adding-users.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -124,8 +124,8 @@ const thebe_selector_output = ".output, .cell_output"
    Whiteboarding with your notebook
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="scroll-syncing.html">
    Using scroll syncing
   </a>
  </li>
@@ -144,8 +144,8 @@ const thebe_selector_output = ".output, .cell_output"
    Adding users (paid accounts)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="privacy.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Privacy
   </a>
  </li>
@@ -254,7 +254,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/jupyterspot/docs/issues/new?title=Issue%20on%20page%20%2Fscroll-syncing.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/jupyterspot/docs/issues/new?title=Issue%20on%20page%20%2Fprivacy.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -282,7 +282,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/scroll-syncing.md"
+        <a href="_sources/privacy.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -319,70 +319,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-scroll-leader">
-   The scroll leader
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#following-the-scroll-leader">
-   Following the scroll leader
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Using scroll syncing</h1>
+                <h1>Privacy</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-scroll-leader">
-   The scroll leader
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#following-the-scroll-leader">
-   Following the scroll leader
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -390,26 +343,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="using-scroll-syncing">
-<h1>Using scroll syncing<a class="headerlink" href="#using-scroll-syncing" title="Permalink to this headline">#</a></h1>
-<p>When someone presents a long Jupyter notebooks of their latest results remotely over Zoom, it becomes hard to ask a question about a specific figure without a lot of verbal interaction about where to scroll to. It’s also impossible to go back and review something important in the initial notebook cells that the presenter has already scrolled past. JupyterSpot introduces the concept of a scroll leader and gives you the option to sync your scroll position with theirs.</p>
-<section id="the-scroll-leader">
-<h2>The scroll leader<a class="headerlink" href="#the-scroll-leader" title="Permalink to this headline">#</a></h2>
-<p>When you add a notebook to JupyterSpot, you automatically become the scroll leader, meaning that the scroll positions of others viewers are synced to yours. This lets you scroll down as your present your work and have them automatically follow you.</p>
-<p>When you are the scroll leader, the scroll syncing button on the far right will look like this:</p>
-<p><img alt="" src="_images/ss-leader.png" /></p>
-<p>Anyone can become the scroll leader and have all participants sync with their position. This is useful if someone has a question about a result that the presenter has already scrolled past. To take over scrolling so that you can ask the question, click the same scroll syncing button, which will look like this:</p>
-<p><img alt="" src="_images/ss-notleader.png" /></p>
-</section>
-<section id="following-the-scroll-leader">
-<h2>Following the scroll leader<a class="headerlink" href="#following-the-scroll-leader" title="Permalink to this headline">#</a></h2>
-<p>Following the leader’s scroll position is enabled by default, however you can disable it using the lock/unlock button. Initially, the button is locked to indicate that you are following the leader’s scroll position:</p>
-<p><img alt="" src="_images/ss-follow.png" /></p>
-<p>If you wish to break away and scroll on your own, simply click the closed lock to disable following the leader:</p>
-<p><img alt="" src="_images/ss-unfollow.png" /></p>
-<p>When you’re ready to join back to the leader, you can click it again to start syncing your scroll position again. This feature is handy if you want to look back over the notebook while the presenter keeps going.</p>
-<p>If you find that your trying to scroll and can’t, it’s probably because you’re following the leader. Trying unlocking so that you can scroll independently.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="privacy">
+<h1>Privacy<a class="headerlink" href="#privacy" title="Permalink to this headline">#</a></h1>
+<p>Similar to <a class="reference external" href="https://nbviewer.org">nbviewer.org</a>, we don’t store any <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebook files. We just render notebooks to HTML from either URLs or uploads and then overlay a whiteboard on top. Also similar to nbviewer, this HTML is cached so that when collaborators join a whiteboard, the HTML is ready to be served to them without having to do the <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> to <code class="docutils literal notranslate"><span class="pre">.html</span></code> conversion again.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -439,17 +375,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="whiteboarding.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="adding-users.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Whiteboarding with your notebook</p>
+            <p class="prev-next-title">Adding users (paid accounts)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="adding-exotic.html" title="next page">
+    <a class='right-next' id="next-link" href="limitations.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Adding notebooks from Colab, SageMaker, etc</p>
+        <p class="prev-next-title">Limitations</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
