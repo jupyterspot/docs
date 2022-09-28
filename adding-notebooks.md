@@ -4,18 +4,16 @@
 
 There are several ways to to add your notebook to JupyterSpot. If the notebook is available from a publicly visible URL, then there are two options:
 
-1. Put that URL into the form at [https://jupyterspot.com/notebooks](https://jupyterspot.com/notebooks)
+1. Put the URL into the form at [https://jupyterspot.com/notebooks](https://jupyterspot.com/notebooks)
 2. Visit `https://jupyterspot.com/notebook?url=YOUR_NB_URL`, where `YOUR_NB_URL` is the notebook's URL.
 
-For option (1), first click the plus icon on the top left of the page:
+For option (1), first click the plus icon on the top left of the page. You'll then be presented with the following form:
 
-![](img/add-notebook.png)
-
-You'll then be presented with the following form. For free accounts, the lower portion of the form will not be visible since it's for uploading private notebooks. Free accounts can however gain one private notebooks by inviting others to join JupyterSpot from their [account page](https://jupyterspot.com/account).
+<!-- ![](img/add-notebook.png) -->
 
 ![](img/add-form.png)
 
-Enter the URL of your notebook into the form's box, then you'll be taken to a whiteboard.
+Enter the URL of your notebook into the form's box, then you'll be taken to your notebook's whiteboard.
 
 ### URL considerations
 
@@ -33,29 +31,47 @@ https://raw.githubusercontent.com.com/jupyterspot/notebooks/blob/main/stable-dif
 
 If you're using an URL from BitBucket for example, make sure it points to the raw notebook JSON content and not a page showing a notebook viewer embedded in it.
 
-All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. **Do not put any personal or proprietary information into these public notebooks!** If you need privacy, you should use a private notebook via one of our [paid plans](https://jupyterspot.com/pricing).
-
 ## Adding a notebook via upload
 
-Paid plans can add private notebooks via uploading through the form shown above. You can either drag and drop a notebook from Finder or Explorer into the outlined area, or click the outlined area and browse to the location of the notebook on your filesystem. Only `.ipynb` files are accepted.
+You can also add a notebooks via uploading them through the same form. You can either drag and drop a notebook from Finder or Explorer into the outlined area or click the outlined area and browse to the location of the notebook on your filesystem. Only `.ipynb` files are accepted.
+
+## Adding a notebook via JupyterLab extension
+
+A thrid option is to use the [JupyterLab extension](https://github.com/jupyterspot/extension), which works with `JupyterLab >= 3.0`. To install it, run
+```
+pip install jupyterspot
+```
+
+This will add an "Open in JupyterSpot" button to the top menu bar when you have a notebook open:
+
+![button](img/extension/button.png)
+
+After installing the extension, copy your API key from [the account page](https://jupyterspot.com/account):
+
+![api-key](img/extension/api-key.png)
+
+Then in JupyterLab, add the key by going to Settings -> Advanced Settings Editor -> JupyterSpot. For newer versions of JupyterLab, this looks like:
+
+![jlab-settings](img/extension/jlab-settings.png)
+
+For older versions of JupyterLab (~3.0), there will be a split pane of System Default and User Preferences, and you'll need to set your key in the right side User Preferences pane and save:
+
+![jlab-settings-old](img/extension/jlab-settings-old.png)
+
+Once your API key is set, you can click the "Open in JupyterSpot" button while in any notebook to create a whiteboard on jupyterspot.com from your notebook's contents.
 
 ## Start collaborating
 
-Once you've added a notebook via one of the methods discussed, you can then share its JupyterSpot link with your colleagues so that they can join your whiteboarding session. To copy the shareable link, click the "Copy Invite Link" in the upper left of the screen where the number of online users is shown:
+Once you've added a notebook, you can share its link with your colleagues so that they can join the whiteboarding session by clicking the "Copy Invite Link" in the upper left of the screen where the number of online users is shown:
 
 ![](img/menu-share-link.png)
 
-As colleagues join, you'll see their names where it says "individual user" in the screenshot above, and the count of online users will increase.
+As colleagues join, you'll see their names added and the online count will increase. 
 
+Notebooks added by free accounts can be viewed from the [public notebooks page](https://jupyterspot.com/notebooks). Any drawings, text, and sticky notes added to such notebooks can be seen by everyone else. **Do not put any personal or proprietary information into these public notebooks!** If you need privacy, either [invite someone else](/sending-invites) to join JupyterSpot to get a private notebook, or check out [the pro plan](https://jupyterspot.com/pricing).
 
-For public notebooks created with URLs, the sharable links have the format:
-```
-https://jupyterspot.com/notebook?url=https://raw.githubusercontent.com/jupyterspot/notebooks/main/stable-diffusion.ipynb
-```
+Notebook added by pro accounts do not appear on the list of public notebooks. Pro accounts can turn off the "Shareable Link" option shown above and toggle the "Read Only Sharing" option to restrict collaborators from editing.
 
-For private notebooks, the format is:
-```
-https://jupyterspot.com/notebook?id=dd7f66fe-7012-442f-a51d-418260cc714c
-```
+<!-- All notebooks added via upload are private, meaning that **only those who have the link are able to view the notebook**. Think of your notebook as a Google Doc with access set to "Anyone with the link has access." -->
 
-All notebooks added via upload are private, meaning that **only those who have the link are able to view the notebook**. Think of your notebook as a Google Doc with access set to "Anyone with the link has access."
+<!-- All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. **Do not put any personal or proprietary information into these public notebooks!** If you need privacy, you should use a private notebook via one of our [paid plans](https://jupyterspot.com/pricing). -->
