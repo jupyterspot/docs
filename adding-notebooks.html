@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Whiteboarding with your notebook" href="whiteboarding.html" />
-    <link rel="prev" title="Welcome to JupyterSpot’s docs" href="intro.html" />
+    <link rel="prev" title="Welcome" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to JupyterSpot’s docs
+                    Welcome
                 </a>
             </li>
         </ul>
@@ -359,6 +359,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-a-notebook-via-jupyterlab-extension">
+   Adding a notebook via JupyterLab extension
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#start-collaborating">
    Start collaborating
   </a>
@@ -400,6 +405,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-a-notebook-via-jupyterlab-extension">
+   Adding a notebook via JupyterLab extension
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#start-collaborating">
    Start collaborating
   </a>
@@ -420,14 +430,13 @@ title="Print to PDF"
 <h2>Adding a notebook via URL<a class="headerlink" href="#adding-a-notebook-via-url" title="Permalink to this headline">#</a></h2>
 <p>There are several ways to to add your notebook to JupyterSpot. If the notebook is available from a publicly visible URL, then there are two options:</p>
 <ol class="simple">
-<li><p>Put that URL into the form at <a class="reference external" href="https://jupyterspot.com/notebooks">https://jupyterspot.com/notebooks</a></p></li>
+<li><p>Put the URL into the form at <a class="reference external" href="https://jupyterspot.com/notebooks">https://jupyterspot.com/notebooks</a></p></li>
 <li><p>Visit <code class="docutils literal notranslate"><span class="pre">https://jupyterspot.com/notebook?url=YOUR_NB_URL</span></code>, where <code class="docutils literal notranslate"><span class="pre">YOUR_NB_URL</span></code> is the notebook’s URL.</p></li>
 </ol>
-<p>For option (1), first click the plus icon on the top left of the page:</p>
-<p><img alt="" src="_images/add-notebook.png" /></p>
-<p>You’ll then be presented with the following form. For free accounts, the lower portion of the form will not be visible since it’s for uploading private notebooks. Free accounts can however gain one private notebooks by inviting others to join JupyterSpot from their <a class="reference external" href="https://jupyterspot.com/account">account page</a>.</p>
+<p>For option (1), first click the plus icon on the top left of the page. You’ll then be presented with the following form:</p>
+<!-- ![](img/add-notebook.png) -->
 <p><img alt="" src="_images/add-form.png" /></p>
-<p>Enter the URL of your notebook into the form’s box, then you’ll be taken to a whiteboard.</p>
+<p>Enter the URL of your notebook into the form’s box, then you’ll be taken to your notebook’s whiteboard.</p>
 <section id="url-considerations">
 <h3>URL considerations<a class="headerlink" href="#url-considerations" title="Permalink to this headline">#</a></h3>
 <p>Note that URLs <strong>must</strong> point to a raw <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file. For GitHub URLs, we automatically substitute <code class="docutils literal notranslate"><span class="pre">github.com</span></code> with <code class="docutils literal notranslate"><span class="pre">raw.githubusercontent.com</span></code> so that</p>
@@ -439,28 +448,37 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p>If you’re using an URL from BitBucket for example, make sure it points to the raw notebook JSON content and not a page showing a notebook viewer embedded in it.</p>
-<p>All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. <strong>Do not put any personal or proprietary information into these public notebooks!</strong> If you need privacy, you should use a private notebook via one of our <a class="reference external" href="https://jupyterspot.com/pricing">paid plans</a>.</p>
 </section>
 </section>
 <section id="adding-a-notebook-via-upload">
 <h2>Adding a notebook via upload<a class="headerlink" href="#adding-a-notebook-via-upload" title="Permalink to this headline">#</a></h2>
-<p>Paid plans can add private notebooks via uploading through the form shown above. You can either drag and drop a notebook from Finder or Explorer into the outlined area, or click the outlined area and browse to the location of the notebook on your filesystem. Only <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files are accepted.</p>
+<p>You can also add a notebooks via uploading them through the same form. You can either drag and drop a notebook from Finder or Explorer into the outlined area or click the outlined area and browse to the location of the notebook on your filesystem. Only <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files are accepted.</p>
+</section>
+<section id="adding-a-notebook-via-jupyterlab-extension">
+<h2>Adding a notebook via JupyterLab extension<a class="headerlink" href="#adding-a-notebook-via-jupyterlab-extension" title="Permalink to this headline">#</a></h2>
+<p>A thrid option is to use the <a class="reference external" href="https://github.com/jupyterspot/extension">JupyterLab extension</a>, which works with <code class="docutils literal notranslate"><span class="pre">JupyterLab</span> <span class="pre">&gt;=</span> <span class="pre">3.0</span></code>. To install it, run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterspot</span>
+</pre></div>
+</div>
+<p>This will add an “Open in JupyterSpot” button to the top menu bar when you have a notebook open:</p>
+<p><img alt="button" src="_images/button.png" /></p>
+<p>After installing the extension, copy your API key from <a class="reference external" href="https://jupyterspot.com/account">the account page</a>:</p>
+<p><img alt="api-key" src="_images/api-key.png" /></p>
+<p>Then in JupyterLab, add the key by going to Settings -&gt; Advanced Settings Editor -&gt; JupyterSpot. For newer versions of JupyterLab, this looks like:</p>
+<p><img alt="jlab-settings" src="_images/jlab-settings.png" /></p>
+<p>For older versions of JupyterLab (~3.0), there will be a split pane of System Default and User Preferences, and you’ll need to set your key in the right side User Preferences pane and save:</p>
+<p><img alt="jlab-settings-old" src="_images/jlab-settings-old.png" /></p>
+<p>Once your API key is set, you can click the “Open in JupyterSpot” button while in any notebook to create a whiteboard on <a class="reference external" href="http://jupyterspot.com">jupyterspot.com</a> from your notebook’s contents.</p>
 </section>
 <section id="start-collaborating">
 <h2>Start collaborating<a class="headerlink" href="#start-collaborating" title="Permalink to this headline">#</a></h2>
-<p>Once you’ve added a notebook via one of the methods discussed, you can then share its JupyterSpot link with your colleagues so that they can join your whiteboarding session. To copy the shareable link, click the “Copy Invite Link” in the upper left of the screen where the number of online users is shown:</p>
+<p>Once you’ve added a notebook, you can share its link with your colleagues so that they can join the whiteboarding session by clicking the “Copy Invite Link” in the upper left of the screen where the number of online users is shown:</p>
 <p><img alt="" src="_images/menu-share-link.png" /></p>
-<p>As colleagues join, you’ll see their names where it says “individual user” in the screenshot above, and the count of online users will increase.</p>
-<p>For public notebooks created with URLs, the sharable links have the format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://jupyterspot.com/notebook?url=https://raw.githubusercontent.com/jupyterspot/notebooks/main/stable-diffusion.ipynb
-</pre></div>
-</div>
-<p>For private notebooks, the format is:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://jupyterspot.com/notebook?id=dd7f66fe-7012-442f-a51d-418260cc714c
-</pre></div>
-</div>
-<p>All notebooks added via upload are private, meaning that <strong>only those who have the link are able to view the notebook</strong>. Think of your notebook as a Google Doc with access set to “Anyone with the link has access.”</p>
-</section>
+<p>As colleagues join, you’ll see their names added and the online count will increase.</p>
+<p>Notebooks added by free accounts can be viewed from the <a class="reference external" href="https://jupyterspot.com/notebooks">public notebooks page</a>. Any drawings, text, and sticky notes added to such notebooks can be seen by everyone else. <strong>Do not put any personal or proprietary information into these public notebooks!</strong> If you need privacy, either <a class="reference internal" href="sending-invites.html"><span class="doc std std-doc">invite someone else</span></a> to join JupyterSpot to get a private notebook, or check out <a class="reference external" href="https://jupyterspot.com/pricing">the pro plan</a>.</p>
+<p>Notebook added by pro accounts do not appear on the list of public notebooks. Pro accounts can turn off the “Shareable Link” option shown above and toggle the “Read Only Sharing” option to restrict collaborators from editing.</p>
+<!-- All notebooks added via upload are private, meaning that **only those who have the link are able to view the notebook**. Think of your notebook as a Google Doc with access set to "Anyone with the link has access." -->
+<!-- All notebooks added via URL are considered public, so any drawings, shapes, arrows, text, and sticky notes added to such notebooks can be seen by everyone else. **Do not put any personal or proprietary information into these public notebooks!** If you need privacy, you should use a private notebook via one of our [paid plans](https://jupyterspot.com/pricing). --></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -494,7 +512,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to JupyterSpot’s docs</p>
+            <p class="prev-next-title">Welcome</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="whiteboarding.html" title="next page">
