@@ -36,6 +36,7 @@ If you're using an URL from BitBucket for example, make sure it points to the ra
 You can also add a notebooks via uploading them through the same form. You can either drag and drop a notebook from Finder or Explorer into the outlined area or click the outlined area and browse to the location of the notebook on your filesystem. Only `.ipynb` files are accepted.
 
 ## Adding a notebook via JupyterLab extension
+<!-- NOTE: don't change the above title or it'll break the link in the extension docs -->
 
 A thrid option is to use the [JupyterLab extension](https://github.com/jupyterspot/extension), which works with `JupyterLab >= 3.0`. To install it, run
 ```
