@@ -8,7 +8,7 @@ As an example, we can export [this Colab notebook](https://colab.research.google
 
 ![](img/colab-export.png)
 
-Once you've downloaded this file, you can either upload it to JupyterSpot as a private notebook (non-free accounts) or put it on GitHub and add via URL as a public notebook (free accounts).
+Once you've downloaded this file, you can add it to JupyterSpot via one of the methods discussed in [Adding Notebooks](/adding-notebooks).
 
 ## SageMaker, Azure, DeepNote, and CoCalc
 
