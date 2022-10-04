@@ -1,4 +1,4 @@
-# Adding users (paid accounts)
+# Adding users (pro accounts)
 
 Pro accounts can add users via the [account page](https://jupyterspot.com/account) after logging in. To add a member of your organization to JupyterSpot, enter their email address to have an invite link sent to them. Once the user clicks the link to accept the invitation and signs up, you'll see a check mark in the accepted column under their email and you'll now be billed for that user at the end of the pay period.
 
